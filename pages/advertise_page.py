@@ -33,7 +33,7 @@ class AdvertisePage(BasePage):
             self.finder(self.input_phone).send_keys("11970459624")
             self.finder(self.input_email).send_keys("helio.castrosp@outlook.com")
             self.finder(self.input_website).send_keys("https://linkedin.com/castrohelio")
-            self.finder(self.input_message).send_keys("Hey there! hire me haha lol")
+            self.finder(self.input_message).send_keys("Hey there! hire me lol haha")
             time.sleep(3)
 
             
