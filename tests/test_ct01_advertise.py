@@ -3,6 +3,7 @@ import pytest
 import conftest
 from pages.home_page import HomePage
 from pages.advertise_page import AdvertisePage
+import time
 
 @pytest.mark.usefixtures("setup_teardown")
 @pytest.mark.test1
