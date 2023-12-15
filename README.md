@@ -4,7 +4,7 @@ Olá! ☕️
 Este é um simples projeto de automação web em python 🎉 <br>
 <img src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white" />
 <br>
-O site escolhido foi o scruff por motivos de: me dá um emprego ae po
+
 
 # Requisitos 📜
     Você deverá instalar os seguintes itens:
@@ -14,6 +14,8 @@ O site escolhido foi o scruff por motivos de: me dá um emprego ae po
 
 
 # Execução 
+    Não se esqueça de ativar o ambiente virtual!
+
     Em seu terminal favorito, navegue até a pasta do projeto e digite:
     pytest
 

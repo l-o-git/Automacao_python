@@ -25,7 +25,7 @@ class AdvertisePage(BasePage):
       def fill_media_form(self):
             assert  self.finder(self.link_perry).is_displayed          
             self.driver.switch_to.frame(self.finder(self.iFrame))
-            self.finder(self.input_organization).send_keys("Hopefully Perry Street Software")
+            self.finder(self.input_organization).send_keys("Company name")
             self.finder(self.input_full_name).send_keys("Hélio Castro")
             self.finder(self.dropdown).click()
             self.finder(self.dropdown).send_keys("55")
@@ -33,12 +33,13 @@ class AdvertisePage(BasePage):
             self.finder(self.input_phone).send_keys("11970459624")
             self.finder(self.input_email).send_keys("helio.castrosp@outlook.com")
             self.finder(self.input_website).send_keys("https://linkedin.com/castrohelio")
-            self.finder(self.input_message).send_keys("Hey there! hire me lol haha")
-            time.sleep(3)
+            self.finder(self.input_message).send_keys("Hey there!")
+            
 
             
 
       def assert_send(self):
+            # validando apenas o enabled para não poluir o banco de prod!
             assert self.finder(self.button_send).is_enabled
 
 
