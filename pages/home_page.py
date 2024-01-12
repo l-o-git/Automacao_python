@@ -15,6 +15,7 @@ class HomePage(BasePage):
       def nav_to_advertise(self):
             self.finder(self.link_advertise).click()
             
+            
 
       
 

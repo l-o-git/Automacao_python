@@ -3,6 +3,7 @@ import pytest
 from selenium.webdriver.chrome.service import Service as CS
 from webdriver_manager.chrome import ChromeDriverManager
 
+# Setup do driver!
 driver: webdriver.Remote
 
 @pytest.fixture
