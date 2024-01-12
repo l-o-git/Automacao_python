@@ -25,14 +25,12 @@ class AdvertisePage(BasePage):
      
       
       def fill_media_form(self):
-            assert  self.finder(self.link_perry).is_displayed
-            # AN IFRAME INSIDER ANOTHER IFRAME LOL        
+            assert  self.finder(self.link_perry).is_displayed       
             self.driver.switch_to.frame(self.finder(self.iFrameA))
             self.finder(self.input_organization).send_keys("Hélio's Company")
             self.finder(self.input_full_name).send_keys("Hélio Castro")
             self.finder(self.dropdown).click()
             self.finder(self.dropdown).send_keys("55")
-            # self.finder(self.br_flag).click()
             self.finder(self.dropdown).send_keys("\n")
             self.finder(self.input_phone).send_keys("11970459624")
             self.finder(self.input_email).send_keys("helio.castrosp@outlook.com")
@@ -42,11 +40,11 @@ class AdvertisePage(BasePage):
             self.finder(self.inputHear).send_keys("C")
             self.finder(self.inputHear).send_keys("\n")
             self.finder(self.inputHear).send_keys("\n")
-            time.sleep(1)
          
 
       def assert_send(self):
             assert self.finder(self.button_send).is_enabled
+            #didn't submit to not register the data on your prd db
 
 
 

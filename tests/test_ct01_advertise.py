@@ -4,9 +4,9 @@ import conftest
 from pages.home_page import HomePage
 from pages.advertise_page import AdvertisePage
 
-#Caminho feliz da página advertise
-@pytest.mark.usefixtures("setup_teardown")
 
+@pytest.mark.usefixtures("setup_teardown")
+#happy path of advertise page
 class TestCT01:
     def test_ct01_request_media_kit(self):
         driver = conftest.driver
